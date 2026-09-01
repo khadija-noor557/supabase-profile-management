@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supabase-profile-management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center main-bg">
+
+        <div class="mobile">
+
+            <!-- Camera -->
+            <div class="camera"></div>
+
+
+                <!-- ================= EMPTY STATE ================= -->
+
+                <div id="emptyState" class="phone-content text-center">
+
+                    <!-- Profile Upload -->
+                    <label for="profileInput" class="profile-placeholder position-relative mx-auto">
+
+                        <i class="bi bi-person-fill"></i>
+
+                        <span class="edit-icon">
+                            <i class="bi bi-pencil-fill"></i>
+                        </span>
+
+                    </label>
+
+                    <input type="file" id="profileInput" accept="image/*" class="d-none">
+
+                    <p class="small-text mt-2 mb-3">
+                        Add a file to edit your profile
+                    </p>
+
+
+                    <!-- Inputs -->
+
+                    <input type="text" class="form-control form-control-sm mb-2 profile-input"
+                        placeholder="Enter your Full Name">
+
+                    <input type="text" class="form-control form-control-sm mb-2 profile-input"
+                        placeholder="Enter your Phone Number">
+
+                    <input type="email" class="form-control form-control-sm mb-3 profile-input"
+                        placeholder="Enter your Email">
+
+                    <button class="btn update-btn">
+                        Update
+                    </button>
+
+                </div>
+
+
+
+                <!-- ================= FILLED STATE ================= -->
+
+                <div id="filledState" class="phone-content text-center d-none">
+
+                    <!-- Profile Image -->
+                    <label for="profileInput2" class="profile-image position-relative mx-auto">
+
+                        <img id="profilePreview" src="" alt="Profile">
+
+                        <span class="edit-icon">
+                            <i class="bi bi-pencil-fill"></i>
+                        </span>
+
+                    </label>
+
+                    <input type="file" id="profileInput2" accept="image/*" class="d-none">
+
+
+                    <p class="username mt-2 mb-3">
+                        Hi, my name is Khadija Noor!
+                    </p>
+
+
+                    <!-- Full Name -->
+
+                    <div class="text-start">
+
+                        <label class="form-label">
+                            Enter your Full Name
+                        </label>
+
+                        <input type="text" id="nameInput" class="form-control form-control-sm active-input mb-2"
+                            value="Khadija Noor">
+
+
+                        <!-- Phone -->
+
+                        <label class="form-label">
+                            Enter your Phone Number
+                        </label>
+
+                        <input type="text" class="form-control form-control-sm active-input mb-2"
+                            value="+92 300 1234567">
+
+
+                        <!-- Email -->
+
+                        <label class="form-label">
+                            Enter your Email
+                        </label>
+
+                        <input type="email" class="form-control form-control-sm active-input mb-3"
+                            value="khadija@gmail.com">
+
+                    </div>
+
+
+                    <button class="btn update-btn">
+                        Update
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>
