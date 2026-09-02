@@ -23,116 +23,118 @@
             <div class="camera"></div>
 
 
-                <!-- ================= EMPTY STATE ================= -->
+            <!-- ================= EMPTY STATE ================= -->
 
-                <div id="emptyState" class="phone-content text-center">
+            <div id="emptyState" class="phone-content text-center">
 
-                    <!-- Profile Upload -->
-                    <label for="profileInput" class="profile-placeholder position-relative mx-auto">
+                <!-- Profile Upload -->
+                <label for="profileInput" class="profile-placeholder position-relative mx-auto">
 
-                        <i class="bi bi-person-fill"></i>
+                    <i class="bi bi-person-fill"></i>
 
-                        <div class="edit-icon">
-                            <i class="bi bi-pencil-fill"></i>
-                        </div>
-
-                    </label>
-
-                    <input type="file" id="profileInput" accept="image/*" class="d-none">
-
-                    <p class="small-text mt-2 mb-3">
-                        Add a file to edit your profile
-                    </p>
-
-
-                    <!-- Inputs -->
-
-                    <input type="text" class="form-control form-control-sm mb-2 profile-input"
-                        placeholder="Enter your Full Name">
-
-                    <input type="text" class="form-control form-control-sm mb-2 profile-input"
-                        placeholder="Enter your Phone Number">
-
-                    <input type="email" class="form-control form-control-sm mb-3 profile-input"
-                        placeholder="Enter your Email">
-
-                    <button class="btn update-btn">
-                        Update
-                    </button>
-
-                </div>
-
-
-
-                <!-- ================= FILLED STATE ================= -->
-
-                <div id="filledState" class="phone-content text-center d-none">
-
-                    <!-- Profile Image -->
-                    <label for="profileInput2" class="profile-image position-relative mx-auto">
-
-                        <img id="profilePreview" src="" alt="">
-
-                        <span class="edit-icon">
-                            <i class="bi bi-pencil-fill"></i>
-                        </span>
-
-                    </label>
-
-                    <input type="file" id="profileInput2"  class="d-none">
-
-
-                    <p class="username mt-2 mb-3">
-                       
-                    </p>
-
-
-                    <!-- Full Name -->
-
-                    <div class="text-start">
-
-                        <label class="form-label">
-                            Enter your Full Name
-                        </label>
-
-                        <input type="text" id="nameInput" class="form-control form-control-sm active-input mb-2"
-                            value="name">
-
-
-                        <!-- Phone -->
-
-                        <label class="form-label">
-                            Enter your Phone Number
-                        </label>
-
-                        <input type="text" class="form-control form-control-sm active-input mb-2"
-                            value="number">
-
-
-                        <!-- Email -->
-
-                        <label class="form-label">
-                            Enter your Email
-                        </label>
-
-                        <input type="email" class="form-control form-control-sm active-input mb-3"
-                            value="email">
-
+                    <div class="edit-icon">
+                        <i class="bi bi-pencil-fill"></i>
                     </div>
 
+                </label>
 
-                    <button class="btn update-btn">
-                        Update
-                    </button>
+                <input type="file" id="profileInput" accept="image/*" class="d-none">
+
+                <p class="small-text mt-2 mb-3">
+                    Add a file to edit your profile
+                </p>
+
+
+                <!-- Inputs -->
+
+                <input type="text" class="form-control form-control-sm mb-2 profile-input"
+                    placeholder="Enter your Full Name">
+
+                <input type="text" class="form-control form-control-sm mb-2 profile-input"
+                    placeholder="Enter your Phone Number">
+
+                <input type="email" class="form-control form-control-sm mb-3 profile-input"
+                    placeholder="Enter your Email">
+
+                <button class="btn update-btn">
+                    Update
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= FILLED STATE ================= -->
+
+            <div id="filledState" class="phone-content text-center d-none">
+
+                <!-- Profile Image -->
+                <label for="profileInput2" class="profile-image position-relative mx-auto">
+
+                    <img id="profilePreview" src="" alt="">
+
+                    <span class="edit-icon">
+                        <i class="bi bi-pencil-fill"></i>
+                    </span>
+
+                </label>
+
+                <input type="file" id="profileInput2" class="d-none">
+
+
+                <p class="username mt-2 mb-3">
+
+                </p>
+
+
+                <!-- Full Name -->
+
+                <div class="text-start">
+
+                    <label class="form-label">
+                        Enter your Full Name
+                    </label>
+
+                    <input type="text" id="nameInput" class="form-control form-control-sm active-input mb-2"
+                        value="name">
+
+
+                    <!-- Phone -->
+
+                    <label class="form-label">
+                        Enter your Phone Number
+                    </label>
+
+                    <input type="text" class="form-control form-control-sm active-input mb-2" value="number">
+
+
+                    <!-- Email -->
+
+                    <label class="form-label">
+                        Enter your Email
+                    </label>
+
+                    <input type="email" class="form-control form-control-sm active-input mb-3" value="email">
 
                 </div>
+
+
+                <button class="btn update-btn">
+                    Update
+                </button>
 
             </div>
 
         </div>
 
+    </div>
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-        <script src="app.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
